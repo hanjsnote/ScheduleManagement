@@ -1,8 +1,8 @@
 package org.lv1.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.lv1.dto.ScheduleRequest;
-import org.lv1.dto.ScheduleResponse;
+import org.common.dto.ScheduleRequest;
+import org.common.dto.ScheduleResponse;
 import org.lv1.service.ScheduleService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

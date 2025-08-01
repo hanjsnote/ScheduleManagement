@@ -1,9 +1,9 @@
-package org.lv2.controller;
+package org.lv3.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.common.dto.ScheduleRequest;
 import org.common.dto.ScheduleResponse;
-import org.lv2.service.ScheduleService;
+import org.lv3.service.ScheduleService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

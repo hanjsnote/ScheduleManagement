@@ -1,4 +1,4 @@
-package org.lv1.dto;
+package org.common.dto;
 
 import lombok.Getter;
 

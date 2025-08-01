@@ -1,10 +1,10 @@
 package org.lv1.service;
 
 import lombok.RequiredArgsConstructor;
-import org.lv1.dto.ScheduleRequest;
-import org.lv1.dto.ScheduleResponse;
-import org.lv1.entity.Schedule;
-import org.lv1.repository.ScheduleRespository;
+import org.common.dto.ScheduleRequest;
+import org.common.dto.ScheduleResponse;
+import org.common.entity.Schedule;
+import org.common.repository.ScheduleRespository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

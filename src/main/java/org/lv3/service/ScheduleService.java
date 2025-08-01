@@ -1,4 +1,4 @@
-package org.lv2.service;
+package org.lv3.service;
 
 import lombok.RequiredArgsConstructor;
 import org.common.dto.ScheduleRequest;

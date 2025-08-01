@@ -1,4 +1,4 @@
-package org.lv2.entity;
+package org.common.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
