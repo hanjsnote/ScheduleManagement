@@ -1,4 +1,4 @@
-package org.lv3.service;
+package org.lv4.service;
 
 import lombok.RequiredArgsConstructor;
 import org.common.dto.ScheduleRequest;
@@ -79,5 +79,13 @@ public class ScheduleService {
                 schedule.getCreatedAt(),
                 schedule.getModifiedAt()
         );
+    }
+
+    public void deleteSchedule(Long id) {
+        boolean boo = scheduleRespository.existsById(id);
+        if(!boo){
+            throw new IllegalArgumentException("해당 데이터가 없습니다.");
+        }
+        scheduleRespository.deleteById(id);
     }
 }

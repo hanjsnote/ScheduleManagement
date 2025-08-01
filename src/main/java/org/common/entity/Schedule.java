@@ -1,15 +1,14 @@
 package org.common.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
 @Getter
 @RequiredArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 public class Schedule extends BaseEntity{ //createdAt, updatedAt을 상속 받았다.
 
     @Id
@@ -25,5 +24,10 @@ public class Schedule extends BaseEntity{ //createdAt, updatedAt을 상속 받�
         this.password = password;
         this.title = title;
         this.content = content;
+    }
+
+    public void updateSchedule(String name, String title){
+        this.name = name;
+        this.title = title;
     }
 }

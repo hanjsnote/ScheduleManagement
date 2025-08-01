@@ -1,11 +1,12 @@
-package org.lv3.controller;
+package org.lv4.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.common.dto.ScheduleRequest;
 import org.common.dto.ScheduleResponse;
-import org.lv3.service.ScheduleService;
+import org.lv4.service.ScheduleService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -32,6 +33,13 @@ public class ScheduleController {
     @PutMapping("/schedules/{id}")
     public ResponseEntity<ScheduleResponse> updateSchedule(@PathVariable Long id, @RequestBody ScheduleRequest request){
         return ResponseEntity.ok(scheduleService.updateSchedule(id, request));
+    }
+
+    @DeleteMapping("/schedules/{id}")
+    public void deleteSchedule(
+            @PathVariable Long id
+    ){
+        scheduleService.deleteSchedule(id);
     }
 
 }
