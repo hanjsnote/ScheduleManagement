@@ -1,4 +1,4 @@
-package org.lv1.entity;
+package org.lv2.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 @Entity
 @Getter
 @RequiredArgsConstructor
-public class Schedule extends BaseEntity{ //createdAt, updatedAt을 상속 받았다.
+public class Schedule extends BaseEntity { //createdAt, updatedAt을 상속 받았다.
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,4 +26,5 @@ public class Schedule extends BaseEntity{ //createdAt, updatedAt을 상속 받�
         this.title = title;
         this.content = content;
     }
+
 }
