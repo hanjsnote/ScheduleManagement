@@ -9,4 +9,4 @@
 | 일정 삭제    | DELETE | /schedules/{id}         | 특정 일정 삭제     | 200 OK |                                                                                             | {}                                                                                                                                    |
 
 # ERD
-![img.png](img.png)
+<img width="474" height="276" alt="image" src="https://github.com/user-attachments/assets/a40e28d0-682c-4dd3-bdad-49c1f4368938" />
